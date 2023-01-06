@@ -6,7 +6,7 @@ import 'package:http/http.dart';
 
 class UserSource {
   static Future<Map> register(String username, String password) async {
-    String url = '${Api.user}/registers.php';
+    String url = '${Api.user}/register.php';
     try {
       Response response = await Client().post(Uri.parse(url), body: {
         'username': username,
